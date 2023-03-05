@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    /* display: none; */
     height: 100vh;  /* Header covers 100% of the viewport*/
     width: auto;
 }
@@ -23,14 +24,22 @@ nav {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #about-me {
     position: absolute;
-    border: dashed 1px blue;
     width: 35vw;
     margin-left: 33%;
-    margin-top: 22%;
+    margin-top: 19%;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+#about-me:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.13);
+    transition: 300ms;
 }
 
 #about-me h1 {
@@ -46,4 +55,31 @@ mark {
 
 h1 mark {
     display: block;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#primary {
+    width: 70vw;
+    height: 30vh;
+    background-color: gray;
+    margin-left: 13%;
+}
+
+.secondary {
+    margin-top: 15px;
+    width: 34vw;
+    height: 30vh;
+    background-color: gray;
+}
+
+.secondary:nth-of-type(even){
+    margin-left: 13%;
+}
+.secondary:nth-of-type(odd){
+    margin-left: 2%;
 }
