@@ -18,6 +18,7 @@ header {
 
 nav {
     position: fixed; /* Sticky Nav */
+    font-size: 1.15em;
     top: 47%;
     margin-left: 20px;
     border-left: solid 3px #70A9FF;
@@ -43,7 +44,6 @@ nav a:hover {
     margin-top: 19%;
     padding: 50px;
     border-radius: 10px;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13); */
 }
 
 #pfp {
@@ -55,12 +55,8 @@ nav a:hover {
     background-size: cover;
     height: 200px;
     width: 200px;
+    box-shadow: -10px 10px 0 #70A9FF;
 }
-
-/* #about-me:hover {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.13);
-    transition: 300ms; 
-} */
 
 #about-me h1 {
     font-size: 2.5em;
@@ -69,7 +65,7 @@ nav a:hover {
 }
 
 mark {
-    background-color: #ffffff00; /* Transparent */
+    background-color: transparent;
     color: #70A9FF;
 }
 
@@ -86,7 +82,7 @@ h1 mark {
 #primary {
     width: 70vw;
     height: 30vh;
-    background-color: gray;
+    background-color: rgb(148, 218, 250);
     margin-left: 13%;
     border-radius: 10px;
     transition: 200ms;
@@ -103,7 +99,7 @@ h1 mark {
     margin-top: 15px;
     width: 34.6vw;
     height: 30vh;
-    background-color: gray;
+    background-color: rgb(255, 247, 176);
     transition: 200ms;
 }
 
@@ -127,9 +123,30 @@ h1 mark {
     text-align: center;
 }
 
-#contact-me h2, #contact-me p {
+#contact-me h2 {
+    display: inline;
+    max-width: 10px;
+    margin-left: 50px;
+}
+
+#contact-me p {
     display: inline;
     margin-left: 50px;
+}
+
+#phone::before {
+    margin-right: 10px;
+    content: url(../images/telephone-fill.svg);
+}
+
+#email::before {
+    margin-right: 10px;
+    content: url(../images/envelope-fill.svg);
+}
+
+#contact-me svg {
+    margin-left: 50px;
+    transform: scale(1.75);
 }
 
 footer {
