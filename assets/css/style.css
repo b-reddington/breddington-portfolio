@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -7,7 +11,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 
 header {
@@ -18,7 +22,7 @@ header {
 
 nav {
     position: fixed; /* Sticky Nav */
-    font-size: 1.15em;
+    font-size: 3rem;
     top: 47%;
     margin-left: 20px;
     border-left: solid 3px #70A9FF;
@@ -28,6 +32,7 @@ nav a {
     text-decoration: none;
     color: black;
     margin-left: 5px;
+    transition: 200ms;
 }
 
 nav a:hover {
@@ -41,7 +46,7 @@ nav a:hover {
     position: absolute;
     width: 35vw;
     margin-left: 37%;
-    margin-top: 19%;
+    margin-top: 18%;
     padding: 50px;
     border-radius: 10px;
 }
@@ -59,7 +64,7 @@ nav a:hover {
 }
 
 #about-me h1 {
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 400;
     line-height: 1em;
 }
@@ -147,10 +152,52 @@ h1 mark {
 #contact-me svg {
     margin-left: 50px;
     transform: scale(1.75);
+    transition: 300ms;
+}
+
+#contact-me svg:hover {
+    transform: scale(2.25);
+    transition: 300ms;
 }
 
 footer {
     margin-top: 10px;
     text-align: center;
     font-size: 0.7em;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 100vh;
+        width: auto;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+    #pfp {
+        box-shadow: none;
+        height: 175px;
+        width: 175px;
+        margin-top: 15%;
+        margin-left: 27%;
+    }
+
+    #about-me {
+        margin-top: 70%;
+        margin-left: 0;
+    }
+
+    #about-me h1 {
+        width: 100vw;
+        font-size: 3.75rem;
+    }
+
+    #about-me p {
+        width: 75vw;
+        font-size: 2.15rem;
+    }
+
 }
