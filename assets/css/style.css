@@ -167,6 +167,33 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    
+    #pfp {
+        margin-left: 8vw;
+        margin-top: 38vh;
+    }
+
+    #about-me {
+        margin-left: 30vw;
+    }
+
+    #about-me h1 {
+        font-size: 5rem;
+        margin-top: 20vh;
+        width: 100vw;
+    }
+
+    #about-me p {
+        width: 60vw;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
 
     header {
         height: 100vh;
@@ -229,10 +256,6 @@ footer {
     .secondary:nth-of-type(odd){
         margin-left: 5vw;
     }
-
-/* header, #projects {
-    display: none;
-} */
 
     #contact-me {
         margin-right: 50px;
