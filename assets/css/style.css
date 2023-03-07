@@ -200,4 +200,29 @@ footer {
         font-size: 2.15rem;
     }
 
+    #primary {
+        width: 90vw;
+        height: 40vh;
+        background-color: rgb(148, 218, 250);
+        margin-left: 5vw;
+        border-radius: 10px;
+        transition: 200ms;
+    }
+
+    .secondary {
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 90vw;
+        height: 30vh;
+        background-color: rgb(255, 247, 176);
+        transition: 200ms;
+    }
+
+    .secondary:nth-of-type(even){
+        margin-left: 5vw;
+    }
+    .secondary:nth-of-type(odd){
+        margin-left: 5vw;
+    }
+
 }
