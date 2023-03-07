@@ -134,8 +134,7 @@ h1 mark {
     margin-left: 50px;
 }
 
-#contact-me p {
-    display: inline;
+#contact-me span {
     margin-left: 50px;
 }
 
@@ -161,9 +160,10 @@ h1 mark {
 }
 
 footer {
-    margin-top: 10px;
     text-align: center;
+    width: 99vw;
     font-size: 0.7em;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,17 +187,22 @@ footer {
 
     #about-me {
         margin-top: 70%;
-        margin-left: 0;
+        margin-left: -10px;
     }
 
     #about-me h1 {
-        width: 100vw;
+        width: 86vw;
+        max-width: 100vw;
         font-size: 3.75rem;
     }
 
     #about-me p {
         width: 75vw;
         font-size: 2.15rem;
+    }
+
+    mark {
+        max-width: fit-content;
     }
 
     #primary {
@@ -225,4 +230,30 @@ footer {
         margin-left: 5vw;
     }
 
+/* header, #projects {
+    display: none;
+} */
+
+    #contact-me {
+        margin-right: 50px;
+        margin-top: 50%;
+        max-width: 100vw;
+        height: 50vh;
+        text-align: center;
+    }
+    
+    #contact-me h2 {
+        max-width: 10px;
+        margin-left: 50px;
+        font-size: 3.5rem;
+    }
+    
+    #phone, #email {
+        display: block;
+        margin-top: 45px;
+    }
+
+    #contact-me svg {
+        margin-top: 45px;
+    }
 }
