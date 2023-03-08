@@ -218,7 +218,7 @@ footer {
 
     #pfp {
         margin-left: 8vw;
-        margin-top: 38vh;
+        margin-top: 42vh;
     }
 
     #about-me {
@@ -305,12 +305,12 @@ footer {
         height: 175px;
         width: 175px;
         margin-top: 10vh;
-        margin-left: 27%;
+        margin-left: 30%;
     }
 
     #about-me {
         margin-top: 30%;
-        margin-left: -10px;
+        margin-left: 20px;
     }
 
     #about-me h1 {
