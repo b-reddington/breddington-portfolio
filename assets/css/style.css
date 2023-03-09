@@ -55,6 +55,15 @@ header {
     padding-left: 0;
 }
 
+.language-title {
+    display: block;
+}
+
+.language-icons {
+    display: inline;
+}
+
+
 nav {
     position: fixed; /* Sticky Nav */
     font-size: 3rem;
@@ -326,12 +335,11 @@ footer {
 
     #about-me {
         margin-top: 30%;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     #about-me h1 {
-        width: 85vw;
-        max-width: 90vw;
+        max-width: 83vw;
         font-size: 3.75rem;
     }
 
@@ -341,7 +349,7 @@ footer {
     }
 
     .card-title {
-        margin-top: 45.65%;
+        margin-top: 225px;
     }
 
     mark {
@@ -349,7 +357,7 @@ footer {
     }
 
     #languages {
-        margin-left: 27vw;
+        margin-left: 25vw;
     }
 
     #primary {
