@@ -15,7 +15,6 @@ body {
 }
 
 header {
-    /* display: none; */
     height: 100vh;  /* Header covers 100% of the viewport*/
     width: auto;
 }
@@ -55,10 +54,11 @@ header {
     padding-left: 0;
 }
 
-.language-title {
+.language-icon sub {
     display: block;
 }
 
+/* changes the default from block element to inline */
 .language-icons {
     display: inline;
 }
@@ -196,11 +196,13 @@ h1 mark {
     margin-left: 50px;
 }
 
-#phone::before {
+/* inserts a phone icon */
+#phone::before { 
     margin-right: 10px;
     content: url(../images/telephone-fill.svg);
 }
 
+/* inserts a letter icon */
 #email::before {
     margin-right: 10px;
     content: url(../images/envelope-fill.svg);
@@ -224,6 +226,7 @@ footer {
     margin-top: 15px;
 }
 
+/* Updates elements for screens up to 768 px (mostly tablets) */
 @media screen and (max-width: 768px) {
     nav {
         display: none;
@@ -314,7 +317,7 @@ footer {
     }
 
 }
-
+/* Updates elements for screens up to 480 px (mostly mobile phones)*/
 @media screen and (max-width: 480px) {
 
     header {
