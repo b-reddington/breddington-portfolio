@@ -25,3 +25,7 @@ This portfolio displays the following
 * A short about-me section
 * A project showcase section
 * A Contact Me section for potential employers
+
+## Deployed Application
+
+https://b-reddington.github.io/breddington-portfolio/
